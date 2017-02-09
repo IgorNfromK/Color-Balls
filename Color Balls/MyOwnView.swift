@@ -35,6 +35,7 @@ class MyOwnView: UIImageView {
             self.bounds=CGRect(x: 0, y: 0, width: 0, height: 0)
         }, completion: {
             (b:Bool)->Void in
+            self.removeFromSuperview()
         })
     }
 

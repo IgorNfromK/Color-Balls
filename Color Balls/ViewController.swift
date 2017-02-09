@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         print(position)
         let imageView=MyOwnView()
         self.view.addSubview(imageView)
-        imageView.center=position
+        imageView.demonstrateMeAtPoint(point: position)
     }
 
 

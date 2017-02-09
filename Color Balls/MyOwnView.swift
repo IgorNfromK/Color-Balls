@@ -17,5 +17,14 @@ class MyOwnView: UIImageView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    func demonstrateMeAtPoint(point:CGPoint){
+        self.center=point
+        self.alpha=0
+        UIView.animate(withDuration: 0.5, animations: {
+            self.alpha=1
+        }, completion: {
+            (b:Bool)->Void in
+        })
+    }
 
 }

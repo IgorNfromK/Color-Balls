@@ -24,6 +24,17 @@ class MyOwnView: UIImageView {
             self.alpha=1
         }, completion: {
             (b:Bool)->Void in
+            self.hideFromMeAtPoint()
+        })
+    }
+    
+    func hideFromMeAtPoint(){
+      
+        UIView.animate(withDuration: 0.5, animations: {
+            self.alpha=0
+            self.bounds=CGRect(x: 0, y: 0, width: 0, height: 0)
+        }, completion: {
+            (b:Bool)->Void in
         })
     }
 

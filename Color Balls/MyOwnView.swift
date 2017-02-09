@@ -11,7 +11,7 @@ import UIKit
 class MyOwnView: UIImageView {
 
     init() {
-        super.init(image: UIImage(named:"kulka-3"))
+        super.init(image: UIImage(named:"kulka-\((arc4random()%6))"))
     }
     
     required init?(coder aDecoder: NSCoder) {

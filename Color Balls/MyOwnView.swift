@@ -3,6 +3,7 @@
 //  Color Balls
 //
 //  Created by Igor Nagaievskyi on 08/02/2017.
+//  design by Alisa Kashytska on 08/02/2017.
 //  Copyright © 2017 Igor Nagaievskyi. All rights reserved.
 //
 
